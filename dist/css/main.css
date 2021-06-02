@@ -1,0 +1,120 @@
+html {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+}
+
+.header__wrap {
+  text-align: center;
+  width: 100%;
+}
+.header__wrap .header__logo {
+  width: 50%;
+  padding: 1.2rem;
+}
+
+.location {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-top: #d3d3d3 1px solid;
+  background-color: #ebebeb;
+  margin: 0;
+}
+.location .location__map-pin {
+  font-size: 1.4rem;
+  padding: 1.4rem;
+}
+.location .location__input {
+  color: black;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding-right: 2.8rem;
+}
+
+.description {
+  width: 100%;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin: 0;
+}
+.description .description__heading {
+  margin: 0;
+  font-size: 1.8rem;
+  padding: 10px;
+}
+.description .description__sub-heading {
+  font-size: 1.2rem;
+  padding: 10px;
+}
+.description .description__button {
+  border-radius: 45px;
+  color: white;
+  font-size: 1rem;
+  border: 0px solid #f87aff;
+  box-shadow: 2px 3px 2px #d6d5d5;
+  background-image: linear-gradient(to bottom right, #f87aff, #9356DC);
+  padding: 10px 15px 10px 15px;
+}
+
+.how-to {
+  padding: 10px;
+}
+.how-to__heading {
+  font-size: 2rem;
+}
+.how-to__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.how-to__steps {
+  flex: none;
+  width: 75%;
+  border: 1px solid #f1f1f1;
+  border-radius: 15px;
+  background-color: #f1f1f1;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 15px;
+  margin: 10px 0;
+}
+.how-to__number {
+  background-color: #9356DC;
+  color: white;
+  display: inline-block;
+  width: 15px;
+  height: 10px;
+  text-justify: center;
+  text-align: center;
+  padding: 3px 2px 5px 2px;
+  margin-left: -35px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
+.how-to__icon {
+  display: inline-block;
+  width: 25px;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #929292;
+}
+.how-to__description {
+  display: inline-block;
+  width: 85%;
+  border: 1px solid blue;
+  font-size: 1.4rem;
+  text-align: left;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Njc3MvbWFpbi5zY3NzIiwiLi4vcHJlZml4ZWQvbWFpbi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBY0E7RUFDSSxnQkFBQTtFQUNBLFNBQUE7RUFDQSxVQUFBO0VBQ0Esc0JBQUE7QUNiSjs7QURnQkE7RUFDSSxZQW5CUztFQW9CVCwrQkFsQlE7RUFtQlIsU0FBQTtBQ2JKOztBRGdCQTtFQUNJLGtCQUFBO0VBQ0EsV0FBQTtBQ2JKO0FEY0k7RUFDSSxVQUFBO0VBQ0EsZUFBQTtBQ1pSOztBRGdCQTtFQUNJLFdBQUE7RUFDQSxhQUFBO0VBQ0EsdUJBQUE7RUFDQSw2QkFBQTtFQUNBLHlCQUFBO0VBQ0EsU0FBQTtBQ2JKO0FEZUk7RUFDSSxpQkFBQTtFQUNBLGVBQUE7QUNiUjtBRGVJO0VBQ0ksWUE5Q0s7RUErQ0wsK0JBN0NJO0VBOENKLGlCQUFBO0VBQ0EsaUJBQUE7RUFDQSxxQkFBQTtBQ2JSOztBRGlCQTtFQUNJLFdBQUE7RUFDQSxrQkFBQTtFQUNBLHlCQUFBO0VBQ0EsU0FBQTtBQ2RKO0FEZ0JJO0VBQ0ksU0FBQTtFQUNBLGlCQUFBO0VBQ0EsYUFBQTtBQ2RSO0FEZ0JJO0VBQ0ksaUJBQUE7RUFDQSxhQUFBO0FDZFI7QURnQkk7RUFDSSxtQkFBQTtFQUNBLFlBQUE7RUFDQSxlQUFBO0VBQ0EseUJBQUE7RUFDQSwrQkFBQTtFQUNBLG9FQUFBO0VBQ0EsNEJBQUE7QUNkUjs7QURrQkE7RUFDSSxhQUFBO0FDZko7QURpQkk7RUFDSSxlQUFBO0FDZlI7QURrQkk7RUFDSSxhQUFBO0VBQ0Esc0JBQUE7RUFDQSx1QkFBQTtFQUNBLG1CQUFBO0FDaEJSO0FEbUJJO0VBQ0ksVUFBQTtFQUNBLFVBQUE7RUFDQSx5QkFBQTtFQUNBLG1CQUFBO0VBQ0EseUJBQUE7RUFDQSxpQkFBQTtFQUNBLGtCQUFBO0VBQ0EsYUFBQTtFQUNBLGNBQUE7QUNqQlI7QURxQkk7RUFDSSx5QkEvR1E7RUFnSFIsWUFBQTtFQUNBLHFCQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7RUFDQSxvQkFBQTtFQUNBLGtCQUFBO0VBQ0Esd0JBQUE7RUFDQSxrQkFBQTtFQUNBLGtCQUFBO0VBQ0EsaUJBQUE7QUNuQlI7QURzQkk7RUFDSSxxQkFBQTtFQUNBLFdBQUE7RUFDQSxrQkFBQTtFQUNBLGlCQUFBO0VBQ0EsY0FBQTtBQ3BCUjtBRHdCSTtFQUNJLHFCQUFBO0VBQ0EsVUFBQTtFQUNBLHNCQUFBO0VBQ0EsaUJBQUE7RUFDQSxnQkFBQTtFQUNBLGlCQUFBO0FDdEJSIiwiZmlsZSI6Im1haW4uY3NzIn0= */

@@ -1,0 +1,120 @@
+html {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+}
+
+.header__wrap {
+  text-align: center;
+  width: 100%;
+}
+.header__wrap .header__logo {
+  width: 50%;
+  padding: 1.2rem;
+}
+
+.location {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-top: #d3d3d3 1px solid;
+  background-color: #ebebeb;
+  margin: 0;
+}
+.location .location__map-pin {
+  font-size: 1.4rem;
+  padding: 1.4rem;
+}
+.location .location__input {
+  color: black;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding-right: 2.8rem;
+}
+
+.description {
+  width: 100%;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin: 0;
+}
+.description .description__heading {
+  margin: 0;
+  font-size: 1.8rem;
+  padding: 10px;
+}
+.description .description__sub-heading {
+  font-size: 1.2rem;
+  padding: 10px;
+}
+.description .description__button {
+  border-radius: 45px;
+  color: white;
+  font-size: 1rem;
+  border: 0px solid #f87aff;
+  box-shadow: 2px 3px 2px #d6d5d5;
+  background-image: linear-gradient(to bottom right, #f87aff, #9356DC);
+  padding: 10px 15px 10px 15px;
+}
+
+.how-to {
+  padding: 10px;
+}
+.how-to__heading {
+  font-size: 2rem;
+}
+.how-to__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.how-to__steps {
+  flex: none;
+  width: 75%;
+  border: 1px solid #f1f1f1;
+  border-radius: 15px;
+  background-color: #f1f1f1;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 15px;
+  margin: 10px 0;
+}
+.how-to__number {
+  background-color: #9356DC;
+  color: white;
+  display: inline-block;
+  width: 15px;
+  height: 10px;
+  text-justify: center;
+  text-align: center;
+  padding: 3px 2px 5px 2px;
+  margin-left: -35px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
+.how-to__icon {
+  display: inline-block;
+  width: 25px;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #929292;
+}
+.how-to__description {
+  display: inline-block;
+  width: 85%;
+  border: 1px solid blue;
+  font-size: 1.4rem;
+  text-align: left;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=main.css.map */

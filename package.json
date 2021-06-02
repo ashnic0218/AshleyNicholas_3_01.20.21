@@ -1,0 +1,14 @@
+{
+  "name": "project_3_ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass ./dist/scss/main.scss:./dist/prefixed/main.css -w",
+    "prefix": "postcss -w ./dist/prefixed/main.css --use autoprefixer -d ./dist/css/"
+  },
+  "author": "",
+  "license": "ISC"
+}
