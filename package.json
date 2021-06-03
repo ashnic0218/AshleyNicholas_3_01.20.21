@@ -6,8 +6,8 @@
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
-    "sass": "sass ./dist/scss/main.scss:./dist/prefixed/main.css -w",
-    "prefix": "postcss -w ./dist/prefixed/main.css --use autoprefixer -d ./dist/css/"
+    "sass": "sass ./scss/main.scss:./dist/prefixed/main.css -w",
+    "prefix": "postcss -w ./prefixed/main.css --use autoprefixer -d ./dist/css/"
   },
   "author": "",
   "license": "ISC"

@@ -166,7 +166,15 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
 
+    .restaurant__link {
+        text-decoration: none;
+    }
+
+    .restaurant__link:visited {
+        text-decoration: none;
+        color: black;
     }
 
     .restaurant__card {
