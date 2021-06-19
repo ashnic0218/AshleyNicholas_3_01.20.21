@@ -152,15 +152,15 @@ body {
 }
 
 .restaurant {
-    background-color: #ebebeb;
+    background-color: #f1f1f1;
 
-    .restaurant__heading {
+    &__heading {
         font-size:1.8rem;
         margin: 10px;
         padding-top:10px;
     }
 
-    .restaurant__wrap {
+    &__wrap {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -168,16 +168,17 @@ body {
         align-items: center;
     }
 
-    .restaurant__link {
-        text-decoration: none;
-    }
-
-    .restaurant__link:visited {
+    &__link {
         text-decoration: none;
         color: black;
     }
 
-    .restaurant__card {
+    &__link:visited {
+        text-decoration: none;
+        color: black;
+    }
+
+    &__card {
         width: 90%;
         height: 200px;
         flex: none;
@@ -185,10 +186,10 @@ body {
         border-radius: 25px;
         background-color: white;
         position: relative;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
-    .restaurant__image {
+    &__image {
         display: inline-block;
         object-fit: cover;
         width: 100%;
@@ -196,21 +197,21 @@ body {
         border-radius: 25px 25px 0 0;
     }
 
-    .restaurant__name {
+    &__name {
         font-size: 1.6rem;
         font-weight: bold;
         margin: 5px 0 0 5px; 
         
     }
 
-    .restaurant__location {
+    &__location {
         font-size: 1.4rem;
         font-weight: 300;
         margin-top: 0;
         margin-left: 6px;
     }
 
-    .restaurant__icon {
+    &__icon {
         color: #929292;
         font-size: 1.8rem;
         position: absolute;
@@ -218,7 +219,7 @@ body {
         bottom: 25px;
     }
 
-    .restaurant__icon--active {
+    &__icon--active {
         position: absolute;
         right: 20px;
         bottom:25px;
@@ -226,14 +227,21 @@ body {
         opacity: 0;
     }
 
-    .restaurant__icon--active:hover {
-        color: $primary-color;
+    &__icon--active:hover {
+        
         opacity: 1;
+        background: -webkit-gradient(linear, left top, right bottom, from(#f87aff), to($primary-color));
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+        transition: all 1s ease-in;
     }
 
-    .restaurant__icon--active:active {
-        color: $primary-color;
+    &__icon--active:active {
         opacity: 1;
+        background: -webkit-gradient(linear, left top, right bottom, from(#f87aff), to($primary-color));
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+        transition: all 1s ease-in;
     }
 
     
@@ -271,4 +279,218 @@ body {
         margin: 2px;
         color: lightgray;
     }
+}
+
+.palette-header {
+    display: flex;
+    margin: 5px;    
+    
+    &__icon {
+        display: inline-block;
+        width: 100%;
+        font-size: 1.8rem;
+        align-self: center;
+        text-align: center;
+    }
+
+    &__logo {
+        flex: none;
+        font-family: $logo-font;
+        text-align: center;
+        font-size: 2rem;
+        width: 90%;
+        margin: 0;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: black;
+        align-self: center;
+        text-align: center;
+        width: 10%;
+    }
+}
+
+.menu {
+    width: 100%;
+
+    &__image-wrap {
+        width: 100%;
+        // object-fit: cover;
+        height: 150px;
+        margin: 0;
+        position: relative;
+    }
+
+    &__image {
+        width: 100%;
+        object-fit: cover;
+        // height: 200px;
+        // margin: 0;
+    }
+
+    &__name {
+        font-size: 2.2rem;
+        font-family: $logo-font;
+    }
+
+    &__name-wrap {
+        display: flex;
+        position: relative;
+        margin: 5px;
+    }
+
+    &__icon {
+        font-size: 2rem;
+        position: absolute;
+        right: 30px;
+        bottom: 25px;
+    }
+
+    &__icon:hover {
+        color: transparent;
+    }
+
+    &__icon:active {
+        color: transparent;
+    }
+
+    &__icon--active {
+        position: absolute;
+        right: 30px;
+        bottom:25px;
+        font-size: 2rem;
+        opacity: 0;
+    }
+
+    &__icon--active:hover {
+        opacity: 1;
+        background: -webkit-gradient(linear, left top, right bottom, from(#f87aff), to($primary-color));
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+        transition: all 1s ease-in;
+    }
+
+    &__icon--active:active {
+        opacity: 1;
+        background: -webkit-gradient(linear, left top, right bottom, from(#f87aff), to($primary-color));
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+        transition: all 1s ease-in;
+    }
+
+    &__card {
+        background-color: #f1f1f1;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        margin: 0;
+        position: relative;
+        width: 100%;
+    }
+
+    &__item-card {
+        border: 1px solid white;
+        background-color: white;
+        margin: 5px;
+        // font-size: 1.6rem;
+        // padding-top: 5px;
+        // padding-bottom: 5px;
+        // display: flex;
+        // flex-flow: column wrap;
+        height: 55px;
+        border-radius: 15px;
+        display: flex;
+        width: 95%;
+        overflow: hidden;
+    }
+
+    &__item-card:hover {
+        .menu__text {
+            width:50%;
+            transition: width 1000ms 100ms ease-in-out;
+        }
+
+        .menu__checkbox {
+
+            .menu__select--active {
+                transform: rotate(-720deg);
+                transition: transform 1500ms linear;
+            }
+        }
+    }
+
+    &__text {
+        flex: none;
+        width: 75%;
+        transition: width 1000ms 100ms ease-in-out; 
+        // display: flex;
+        // flex-direction: column;
+        align-items: center;
+
+        h3, p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+    }
+
+    &__item {
+        // padding: 5px;
+        font-size: 1.4rem;
+        margin: 4px;
+        // display: flex;
+        // justify-content: flex-start;
+    }
+
+    &__description {
+        // padding: 5px;
+        font-size:1.2rem;
+        margin: 10px 4px 1px 4px;
+    }
+
+    &__price {
+        flex: none;
+        width:30%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size:1.4rem;
+        font-weight: bold;
+        padding: 8px;
+    }
+
+    &__checkbox {
+        background-color: $tertiary-color;
+        color: white;
+        flex: none;
+        width: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    &__select--active:hover {
+        transform: rotate(720deg);
+        transition: transform 1500ms linear;
+    }
+
+    &__heading {
+        font-weight: normal;
+        margin-bottom: 3px;
+    }
+
+    &__underline {
+        width: 30%;
+        text-align: left;
+        margin: 0;
+        
+        
+    }
+
+    &__head-wrap {
+        width: 35%;
+        margin: 5px;
+    }
+
 }
