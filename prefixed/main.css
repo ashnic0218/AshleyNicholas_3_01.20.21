@@ -1,3 +1,7 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
   margin: 0;
@@ -286,27 +290,32 @@ body {
 .menu__icon {
   font-size: 2rem;
   position: absolute;
-  right: 30px;
-  bottom: 25px;
+}
+.menu__icon-wrap {
+  position: absolute;
+  right: 40px;
+  bottom: 35px;
 }
 .menu__icon:hover {
-  color: transparent;
+  opacity: 0;
 }
 .menu__icon:active {
   color: transparent;
 }
 .menu__icon--active {
   position: absolute;
-  right: 30px;
-  bottom: 25px;
   font-size: 2rem;
   opacity: 0;
 }
-.menu__icon--active:hover {
+.menu__icon-wrap:hover .menu__icon--active {
   opacity: 1;
   background: -webkit-gradient(linear, left top, right bottom, from(#f87aff), to(#9356DC));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: all 1s ease-in;
+}
+.menu__icon-wrap:hover .menu__icon {
+  opacity: 0;
   transition: all 1s ease-in;
 }
 .menu__icon--active:active {
@@ -321,13 +330,13 @@ body {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   margin: 0;
+  padding: 5px;
   position: relative;
   width: 100%;
 }
 .menu__item-card {
-  border: 1px solid white;
   background-color: white;
-  margin: 5px;
+  margin: 10px;
   height: 55px;
   border-radius: 15px;
   display: flex;
@@ -335,7 +344,7 @@ body {
   overflow: hidden;
 }
 .menu__item-card:hover .menu__text {
-  width: 50%;
+  width: 55%;
   transition: width 1000ms 100ms ease-in-out;
 }
 .menu__item-card:hover .menu__checkbox .menu__select--active {
@@ -390,13 +399,33 @@ body {
   margin-bottom: 3px;
 }
 .menu__underline {
-  width: 30%;
+  width: 35%;
   text-align: left;
   margin: 0;
+  background-color: #99E2D0;
+  border: none;
+  height: 1px;
 }
 .menu__head-wrap {
   width: 35%;
   margin: 5px;
+}
+.menu__wrap {
+  background-color: #f1f1f1;
+  margin: 0;
+}
+.menu__bttn {
+  background-image: linear-gradient(to bottom right, #f87aff, #9356DC);
+  border-radius: 15px;
+  color: white;
+  border: 1px solid #9356DC;
+}
+.menu__bttn-wrap {
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */
