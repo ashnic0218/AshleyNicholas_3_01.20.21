@@ -21,13 +21,64 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    min-width:315px;
 }
 
 body {
     color: $text-color;
     font-family: $text-font;
     margin: 0;
+    position: relative;
+    // overflow: hidden;
 }
+
+
+  
+.spinner_container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    
+    animation: hide 5000ms forwards; 
+}
+  
+.spinner {
+    font-size: 10rem;
+    transform: translate(50%, 50%);
+    animation: spin 3s forwards; 
+}
+  
+@keyframes hide {
+    0% {
+      opacity: 1;
+      z-index: 100;
+    }
+  
+    90% {
+      opacity: 1;
+      z-index: 100;
+    }
+    
+    100% {
+      opacity: 0;
+      z-index: -10;
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    
+    100% {
+      transform: rotate(1080deg);
+    }
+}
+  
 
 .header__wrap {
     text-align: center;
@@ -102,7 +153,7 @@ body {
 
     &__steps {
         flex: none;
-        width: 75%;
+        width: 80%;
         border: 1px solid #f1f1f1;
         border-radius: 15px;
         background-color: #f1f1f1;
@@ -117,11 +168,10 @@ body {
         background-color: $primary-color;
         color: white;
         display: inline-block;
-        width: 15px;
-        height: 10px;
-        text-justify: center;
+        width: 24px;
+        height: 24px;
         text-align: center;
-        padding: 3px 2px 5px 2px;
+        padding: 5px;
         margin-left: -35px;
         border-radius: 50%;
         font-size: 1.2rem;
@@ -157,6 +207,7 @@ body {
 
 .restaurant {
     background-color: #f1f1f1;
+    padding-top: 20px;
 
     &__heading {
         font-size:1.8rem;
@@ -184,59 +235,78 @@ body {
 
     &__card {
         width: 90%;
-        height: 200px;
+        height: 250px;
         flex: none;
-        border: 1px solid white;
         border-radius: 25px;
         background-color: white;
         position: relative;
         margin-bottom: 20px;
+        padding: 0px;
+        box-shadow: 2px 4px 10px #d6d5d5, -1px 3px 15px #d6d5d5;
     }
 
     &__image {
         display: inline-block;
         object-fit: cover;
         width: 100%;
-        height: 60%;
+        height: 75%;
         border-radius: 25px 25px 0 0;
     }
 
     &__name {
         font-size: 1.6rem;
         font-weight: bold;
-        margin: 5px 0 0 5px; 
+        margin: 5px 0 0 8px; 
         
     }
 
     &__location {
         font-size: 1.4rem;
         font-weight: 300;
-        margin-top: 0;
-        margin-left: 6px;
+        margin-top: 5px;
+        margin-left: 8px;
     }
 
     &__icon {
         color: #929292;
         font-size: 1.8rem;
         position: absolute;
-        right: 20px;
-        bottom: 25px;
+        // right: 20px;
+        // bottom: 25px;
+    }
+
+    &__icon-wrap {
+        position: absolute;
+        bottom: 45px;
+        right: 45px;
+    }
+
+    &__icon:hover {
+        opacity: 0;
+    }
+
+    &__icon:active {
+        color: transparent;
     }
 
     &__icon--active {
         position: absolute;
-        right: 20px;
-        bottom:25px;
-        font-size: 1.8rem;
+        // right: 30px;
+        // bottom:25px;
+        font-size: 2rem;
         opacity: 0;
     }
 
-    &__icon--active:hover {
-        
+    &__icon-wrap:hover .restaurant__icon--active {
         opacity: 1;
-        background: -webkit-gradient(linear, left top, right bottom, from(#f87aff), to($primary-color));
+        background: -webkit-gradient(linear, left bottom, right top, from(#f87aff), to($primary-color));
 	    -webkit-background-clip: text;
 	    -webkit-text-fill-color: transparent;
+        transition: all 1s ease-in;
+    }
+
+    &__icon-wrap:hover .restaurant__icon {
+        opacity: 0;
         transition: all 1s ease-in;
     }
 
@@ -246,6 +316,17 @@ body {
 	    -webkit-background-clip: text;
 	    -webkit-text-fill-color: transparent;
         transition: all 1s ease-in;
+    }
+
+    &__new {
+        border: 1px solid $tertiary-color;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 5px 15px 5px 15px;
+        background-color: $tertiary-color;
+        color: #449480;
+        font-weight: bold;
     }
 
     
@@ -406,7 +487,7 @@ body {
 
     &__item-card {
         background-color: white;
-        margin: 10px;
+        margin: 0 10px 10px 10px;
         // font-size: 1.6rem;
         // padding-top: 5px;
         // padding-bottom: 5px;
@@ -417,6 +498,17 @@ body {
         display: flex;
         width: 95%;
         overflow: hidden;
+        animation: slide-up 3s forwards;
+        box-shadow: 2px 4px 10px #d6d5d5, -1px 3px 15px #d6d5d5;
+    
+    }
+    @keyframes slide-up {
+        0% {
+            margin-top: 50px;
+        }
+        100% {
+            margin-top: 10px;
+        }
     }
 
     &__item-card:hover {
@@ -441,6 +533,7 @@ body {
         // display: flex;
         // flex-direction: column;
         align-items: center;
+        padding: 3px 0 3px 3px;
 
         h3, p {
             white-space: nowrap;
@@ -453,7 +546,9 @@ body {
         // padding: 5px;
         font-size: 1.4rem;
         margin: 4px;
+        width: 90%;
         // display: flex;
+        // flex-flow: row wrap;
         // justify-content: flex-start;
     }
 
@@ -493,21 +588,24 @@ body {
     &__heading {
         font-weight: normal;
         margin-bottom: 3px;
+        padding-left: 5px;
+        font-size: 1.2rem;
+        
+        
     }
 
     &__underline {
         width: 35%;
         text-align: left;
         margin: 0;
-        background-color: $tertiary-color;
-        border: none;
-        height: 1px;
-        
+        border-bottom: 2px solid $tertiary-color;
+        padding-bottom: 3px;        
     }
 
     &__head-wrap {
         width: 35%;
         margin: 5px;
+        padding-bottom: 3px;
     }
 
     &__wrap {
@@ -519,7 +617,11 @@ body {
         background-image: linear-gradient(to bottom right, #f87aff, $primary-color);
         border-radius: 15px;
         color: white;
-        border: 1px solid $primary-color;
+        padding: 10px;
+        font-size: 1.2rem;
+        border: none;
+        width: 40%;
+        margin: 20px 20px 50px 20px;
     }
 
     &__bttn-wrap {
@@ -528,8 +630,59 @@ body {
         justify-content: center;
         align-items: center;
         padding: 5px;
+        box-shadow: 2px 3px 4px #d6d5d5;
     }
 
+    #menu__item--longer {
+        font-size: 1.2rem;
+        // display: flex-box;
+        // flex-wrap: wrap;
+        // overflow-wrap: normal;
+        // overflow: clip;
+    }
+
+    &__entrees-wrap {
+        padding-bottom: 8px;
+    }
+
+    &__main-wrap {
+        padding-bottom: 8px;
+    }
+
+}
+//Tablet mode//
+
+@media screen and (max-width: 950px) and (min-width: 600px) {
+    .restaurant__card {
+        width: 45%;
+        display: inline-block;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    .restaurant__wrap {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .footer__wrap {
+        height: 50px;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .menu__item-wrap {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu__item-card {
+        width: 30%;
+    }
+
+    .menu__image-wrap {
+        height: 300px;
+    }
 }
 
 
