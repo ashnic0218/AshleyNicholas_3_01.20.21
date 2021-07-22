@@ -1,0 +1,322 @@
+//Tablet mode//
+
+@media screen and (max-width: 950px) and (min-width: 600px) {
+    .restaurant__card {
+        width: 45%;
+        display: inline-block;
+        margin-right: 15px;
+        margin-left: 15px;
+        flex:none;
+    }
+    .restaurant__wrap {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        // margin: 30px;
+    }
+
+    .footer__wrap {
+        height: 50px;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .footer {
+        height: 150px;
+    }
+
+    .menu__bttn {
+        padding: 10px;
+        width: 25%;
+        font-size:1.6rem;
+    }
+
+    
+
+    .menu__item-wrap {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:space-between;
+    }
+
+    .menu__item-card {
+        width: 45%;
+        height: 150px;
+        flex: none;
+        margin-bottom: 20px;
+    }
+
+    .menu__image-wrap {
+        height: 300px;
+    }
+
+    .menu__name {
+        font-size: 3.6rem;
+    }
+
+    .menu__item {
+        font-size: 2.2rem;
+    }
+
+    .menu__description {
+        font-size: 1.8rem;
+        // display: flex;
+        // flex-flow: row wrap;
+        // height: 55px;
+    }
+
+    .menu__text h3, .menu__text p{
+        white-space:normal;
+        overflow: visible;
+        display: flex;
+        flex-flow: row wrap;
+        width: 65%;
+    }
+
+    .menu__price {
+        font-size: 2.2rem;
+        width: 25%;
+    }
+
+    .menu__icon {
+        font-size: 3.2rem;
+    }
+    
+    .menu__icon--active {
+        font-size: 3.2rem;
+    }
+    .menu__icon-wrap {
+        top: 40px;
+        right: 60px;
+    }
+
+    .menu__checkbox {
+        width: 20%;
+        flex: none;
+    }
+
+    .palette-header__icon {
+        font-size: 3.4rem;
+    }
+
+    .palette-header__logo {
+        font-size: 3.6rem;
+    }
+}
+
+//Desktop version//
+
+@media screen and (min-width: 951px) {
+    
+    .header__wrap {
+        width: 60%;
+        text-align: left;  
+    }
+    
+    .location {
+        justify-content: flex-start;
+    }
+
+    .description {
+
+        font-size: 22px;
+
+        &__heading{
+            font-size: 26px;
+        }
+
+        &__sub-heading {
+            font-size: 2.2rem;
+        }
+
+        &__button {
+            font-size: 1.8rem;
+            padding: 15px 20px 15px 20px;
+        }
+    }
+    
+    .how-to {
+        padding: 30px 10px;
+
+        &__heading {
+            font-size: 2.4rem;
+        }
+        
+        &__wrap {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    
+        &__steps {
+            width: 25%;
+        }
+
+        &__number {
+            margin-left: -50px;
+            width: 25px;
+            font-size: 1.2rem;
+            height: 25px;
+        }
+
+        
+        &__icon {
+            font-size: 1.2rem;
+            width: 20%;
+        }
+
+        &__description {
+            font-size: 1.2rem;
+            width: 75%;
+        }
+
+        &__icon--3 {
+            font-size: 1.2rem;
+        }
+
+    }
+    
+    .restaurant {
+        
+        &__card {
+            width: 45%;
+            display: inline-block;
+            margin-right: 15px;
+            margin-left: 15px;
+            height: 500px;
+        }
+    
+        &__wrap {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+        }
+
+        &__icon {
+            font-size: 3.2rem;
+        }
+
+        &__icon--active {
+            font-size: 3.2rem;
+        }
+
+        &__heading {
+            font-size: 3.2rem;
+            margin-bottom: 40px;
+        }
+
+        &__name {
+            font-size: 2.6rem;
+        }
+
+        &__location {
+            font-size: 2.2rem;
+        }
+
+        &__new {
+            font-size: 2.0rem;
+        }
+    }
+
+    
+    .footer {
+        height: 150px;
+
+        &__wrap {
+            height: 50px;
+            display: flex;
+            flex-flow: column wrap;
+        }
+    }
+
+    .palette-header {
+        
+        &__icon {
+            font-size: 3.4rem;
+        }
+    
+        &__logo {
+            font-size: 3.6rem;
+        }
+
+    }
+    
+    .menu {
+
+        &__bttn {
+            padding: 15px;
+            width: 20%;
+            font-size:1.6rem;
+            margin: 25px;
+        }
+    
+        &__item-wrap {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content:space-between;
+        }
+    
+        &__item-card {
+            width: 45%;
+            height: 200px;
+            flex: none;
+            margin-bottom: 20px;
+        }
+    
+        &__name {
+            font-size: 3.6rem;
+        }
+    
+        &__item {
+            font-size: 2.2rem;
+        }
+    
+        &__description {
+            font-size: 1.8rem;
+            // display: flex;
+            // flex-flow: row wrap;
+            // height: 55px;
+        }
+    
+        &__text h3, &__text p{
+            white-space:normal;
+            overflow: visible;
+            display: flex;
+            flex-flow: row wrap;
+        }
+    
+        &__image-wrap {
+            height: 600px;
+        }
+    
+        &__image {
+            height: 700px;
+        }
+
+        &__price {
+            font-size: 2.2rem;
+            width: 25%;
+        }
+    
+        &__icon {
+            font-size: 3.2rem;
+        }
+        
+        &__icon--active {
+            font-size: 3.2rem;
+        }
+        &__icon-wrap {
+            top: 40px;
+            right: 60px;
+        }
+    
+        &__checkbox {
+            width: 20%;
+            flex: none;
+        }
+
+    }
+
+    
+    
+}

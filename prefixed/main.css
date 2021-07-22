@@ -91,16 +91,16 @@ body {
   background-color: #f1f1f1;
   margin: 0;
 }
-.description .description__heading {
+.description__heading {
   margin: 0;
   font-size: 1.8rem;
   padding: 10px;
 }
-.description .description__sub-heading {
+.description__sub-heading {
   font-size: 1.2rem;
   padding: 10px;
 }
-.description .description__button {
+.description__button {
   border-radius: 45px;
   color: white;
   font-size: 1rem;
@@ -119,8 +119,8 @@ body {
 }
 .how-to__wrap {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 .how-to__steps {
@@ -181,8 +181,8 @@ body {
 .restaurant__wrap {
   width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 .restaurant__link {
@@ -411,6 +411,10 @@ body {
 @keyframes slide-up {
   0% {
     margin-top: 50px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
   100% {
     margin-top: 10px;
@@ -525,6 +529,7 @@ body {
     display: inline-block;
     margin-right: 15px;
     margin-left: 15px;
+    flex: none;
   }
 
   .restaurant__wrap {
@@ -539,17 +544,243 @@ body {
     flex-flow: column wrap;
   }
 
+  .footer {
+    height: 150px;
+  }
+
+  .menu__bttn {
+    padding: 10px;
+    width: 25%;
+    font-size: 1.6rem;
+  }
+
   .menu__item-wrap {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-between;
   }
 
   .menu__item-card {
-    width: 30%;
+    width: 45%;
+    height: 150px;
+    flex: none;
+    margin-bottom: 20px;
   }
 
   .menu__image-wrap {
     height: 300px;
+  }
+
+  .menu__name {
+    font-size: 3.6rem;
+  }
+
+  .menu__item {
+    font-size: 2.2rem;
+  }
+
+  .menu__description {
+    font-size: 1.8rem;
+  }
+
+  .menu__text h3, .menu__text p {
+    white-space: normal;
+    overflow: visible;
+    display: flex;
+    flex-flow: row wrap;
+    width: 65%;
+  }
+
+  .menu__price {
+    font-size: 2.2rem;
+    width: 25%;
+  }
+
+  .menu__icon {
+    font-size: 3.2rem;
+  }
+
+  .menu__icon--active {
+    font-size: 3.2rem;
+  }
+
+  .menu__icon-wrap {
+    top: 40px;
+    right: 60px;
+  }
+
+  .menu__checkbox {
+    width: 20%;
+    flex: none;
+  }
+
+  .palette-header__icon {
+    font-size: 3.4rem;
+  }
+
+  .palette-header__logo {
+    font-size: 3.6rem;
+  }
+}
+@media screen and (min-width: 951px) {
+  .header__wrap {
+    width: 60%;
+    text-align: left;
+  }
+
+  .location {
+    justify-content: flex-start;
+  }
+
+  .description {
+    font-size: 22px;
+  }
+  .description__heading {
+    font-size: 26px;
+  }
+  .description__sub-heading {
+    font-size: 2.2rem;
+  }
+  .description__button {
+    font-size: 1.8rem;
+    padding: 15px 20px 15px 20px;
+  }
+
+  .how-to {
+    padding: 30px 10px;
+  }
+  .how-to__heading {
+    font-size: 2.4rem;
+  }
+  .how-to__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .how-to__steps {
+    width: 25%;
+  }
+  .how-to__number {
+    margin-left: -50px;
+    width: 25px;
+    font-size: 1.2rem;
+    height: 25px;
+  }
+  .how-to__icon {
+    font-size: 1.2rem;
+    width: 20%;
+  }
+  .how-to__description {
+    font-size: 1.2rem;
+    width: 75%;
+  }
+  .how-to__icon--3 {
+    font-size: 1.2rem;
+  }
+
+  .restaurant__card {
+    width: 45%;
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 15px;
+    height: 500px;
+  }
+  .restaurant__wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  .restaurant__icon {
+    font-size: 3.2rem;
+  }
+  .restaurant__icon--active {
+    font-size: 3.2rem;
+  }
+  .restaurant__heading {
+    font-size: 3.2rem;
+    margin-bottom: 40px;
+  }
+  .restaurant__name {
+    font-size: 2.6rem;
+  }
+  .restaurant__location {
+    font-size: 2.2rem;
+  }
+  .restaurant__new {
+    font-size: 2rem;
+  }
+
+  .footer {
+    height: 150px;
+  }
+  .footer__wrap {
+    height: 50px;
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .palette-header__icon {
+    font-size: 3.4rem;
+  }
+  .palette-header__logo {
+    font-size: 3.6rem;
+  }
+
+  .menu__bttn {
+    padding: 15px;
+    width: 20%;
+    font-size: 1.6rem;
+    margin: 25px;
+  }
+  .menu__item-wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .menu__item-card {
+    width: 45%;
+    height: 200px;
+    flex: none;
+    margin-bottom: 20px;
+  }
+  .menu__name {
+    font-size: 3.6rem;
+  }
+  .menu__item {
+    font-size: 2.2rem;
+  }
+  .menu__description {
+    font-size: 1.8rem;
+  }
+  .menu__text h3, .menu__text p {
+    white-space: normal;
+    overflow: visible;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .menu__image-wrap {
+    height: 600px;
+  }
+  .menu__image {
+    height: 700px;
+  }
+  .menu__price {
+    font-size: 2.2rem;
+    width: 25%;
+  }
+  .menu__icon {
+    font-size: 3.2rem;
+  }
+  .menu__icon--active {
+    font-size: 3.2rem;
+  }
+  .menu__icon-wrap {
+    top: 40px;
+    right: 60px;
+  }
+  .menu__checkbox {
+    width: 20%;
+    flex: none;
   }
 }
 

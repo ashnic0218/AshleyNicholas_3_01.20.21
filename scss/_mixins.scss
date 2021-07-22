@@ -1,0 +1,26 @@
+@mixin restaurantCard {
+    width: 90%;
+        height: 250px;
+        flex: none;
+        border-radius: 25px;
+        background-color: white;
+        position: relative;
+        margin-bottom: 20px;
+        padding: 0px;
+        box-shadow: 2px 4px 10px #d6d5d5, -1px 3px 15px #d6d5d5;
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin footer {
+    background-color: #444444;
+    color: white;
+    text-align: left;
+    padding: 15px;
+}
+
+
+
