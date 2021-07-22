@@ -117,10 +117,15 @@ body {
         font-size: 1rem;
         border: 0px solid #f87aff;
         box-shadow: 2px 3px 4px #d6d5d5;
-        background-image: linear-gradient(to bottom right, #f87aff, $primary-color);
+        background-image: linear-gradient(to bottom right, $secondary-color, $primary-color);
         padding: 10px 15px 10px 15px;
         margin-bottom: 20px;
+        &:hover {
+            box-shadow: 3px 4px 5px #b3b1b1;
+            background-image: linear-gradient(to bottom right, #f792da, #9961dd);
+        }
     }
+
 }
 
 .how-to {
@@ -275,7 +280,7 @@ body {
 
     &__icon-wrap:hover .restaurant__icon--active {
         opacity: 1;
-        background: -webkit-gradient(linear, left bottom, right top, from(#f87aff), to($primary-color));
+        background: -webkit-gradient(linear, left bottom, right top, from($secondary-color), to($primary-color));
 	    -webkit-background-clip: text;
 	    -webkit-text-fill-color: transparent;
         transition: all 1s ease-in;
@@ -288,7 +293,7 @@ body {
 
     &__icon--active:active {
         opacity: 1;
-        background: -webkit-gradient(linear, left top, right bottom, from(#f87aff), to($primary-color));
+        background: -webkit-gradient(linear, left top, right bottom, from($secondary-color), to($primary-color));
 	    -webkit-background-clip: text;
 	    -webkit-text-fill-color: transparent;
         transition: all 1s ease-in;
@@ -429,7 +434,7 @@ body {
 
     &__icon-wrap:hover .menu__icon--active {
         opacity: 1;
-        background: -webkit-gradient(linear, left top, right bottom, from(#f87aff), to($primary-color));
+        background: -webkit-gradient(linear, left top, right bottom, from($secondary-color), to($primary-color));
 	    -webkit-background-clip: text;
 	    -webkit-text-fill-color: transparent;
         transition: all 1s ease-in;
@@ -442,7 +447,7 @@ body {
 
     &__icon--active:active {
         opacity: 1;
-        background: -webkit-gradient(linear, left top, right bottom, from(#f87aff), to($primary-color));
+        background: -webkit-gradient(linear, left top, right bottom, from($secondary-color), to($primary-color));
 	    -webkit-background-clip: text;
 	    -webkit-text-fill-color: transparent;
         transition: all 1s ease-in;
@@ -590,7 +595,7 @@ body {
     }
 
     &__bttn {
-        background-image: linear-gradient(to bottom right, #f87aff, $primary-color);
+        background-image: linear-gradient(to bottom right, $secondary-color, $primary-color);
         border-radius: 15px;
         color: white;
         padding: 10px;
@@ -598,6 +603,12 @@ body {
         border: none;
         width: 40%;
         margin: 20px 20px 50px 20px;
+        box-shadow: 2px 3px 4px #d6d5d5;
+
+        &:hover {
+            background-image: linear-gradient(to bottom right, #f792da, #9961dd);
+            box-shadow: 3px 4px 5px #b3b1b1;
+        }
     }
 
     &__bttn-wrap {
