@@ -251,7 +251,6 @@ body {
   opacity: 1;
   background: -webkit-gradient(linear, left bottom, right top, from(#FF79DA), to(#9356DC));
   -webkit-background-clip: text;
-  background-clip: border-box;
   -webkit-text-fill-color: transparent;
   color: #9356DC;
   transition: all 1s ease-in;
@@ -264,7 +263,6 @@ body {
   opacity: 1;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   -webkit-background-clip: text;
-  background-clip: border-box;
   -webkit-text-fill-color: transparent;
   color: #FF79DA;
   transition: all 1s ease-in;
@@ -382,7 +380,6 @@ body {
   opacity: 1;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   -webkit-background-clip: text;
-  background-clip: border-box;
   -webkit-text-fill-color: transparent;
   color: #FF79DA;
   transition: all 1s ease-in;
@@ -395,7 +392,6 @@ body {
   opacity: 1;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   -webkit-background-clip: text;
-  background-clip: border-box;
   -webkit-text-fill-color: transparent;
   color: #FF79DA;
   transition: all 1s ease-in;
