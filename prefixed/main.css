@@ -739,6 +739,9 @@ body {
     font-size: 3.6rem;
   }
 
+  .menu__heading {
+    font-size: 1.8rem;
+  }
   .menu__bttn {
     padding: 15px;
     width: 20%;
