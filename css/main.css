@@ -545,7 +545,7 @@ body {
 }
 .menu__bttn {
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  border-radius: 15px;
+  border-radius: 45px;
   color: white;
   padding: 10px;
   font-size: 1.2rem;
