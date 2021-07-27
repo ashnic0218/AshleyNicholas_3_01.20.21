@@ -17,17 +17,16 @@ body {
     font-family: $text-font;
     margin: 0;
     position: relative;
-    // overflow: hidden;
 }
 
-
+//*******LOADING CSS********//
   
 .spinner_container {
     position: absolute;
     width: 100%;
     height: 100%;
     @include flexCenter;
-    align-items: center;
+    align-items: flex-start;
     background-color: white;
     
     animation: hide 5000ms forwards; 
@@ -65,11 +64,13 @@ body {
       transform: rotate(1080deg);
     }
 }
-  
+
+//********HOMEPAGE CSS********//  
 
 .header__wrap {
     text-align: center;
     width: 100%;
+
     .header__logo {
         width: 50%;
         padding: 1.2rem;
@@ -87,6 +88,7 @@ body {
         font-size: 1.4rem;
         padding: 1.4rem;
     }
+
     .location__input {
         color: $text-color;
         font-family: $text-font;
@@ -96,21 +98,25 @@ body {
     }
 }
 
+//HOW TO AND DESCRIPTION CSS//
+
 .description {
     width: 100%;
     text-align: center;
     background-color: #f1f1f1;
     margin: 0;
-    // padding: 20px;   (figure out padding) 
+
     &__heading {
         margin: 0;
         font-size: 1.8rem;
         padding: 10px;
     }
+
     &__sub-heading {
         font-size: 1.2rem;
         padding: 10px;
     }
+
     &__button {
         border-radius: 45px;
         color: white;
@@ -144,7 +150,6 @@ body {
     &__steps {
         flex: none;
         width: 80%;
-        border: 1px solid #f1f1f1;
         border-radius: 15px;
         background-color: #f1f1f1;
         font-size: 1.8rem;
@@ -194,6 +199,8 @@ body {
     }
     
 }
+
+// RESTAURANT SECTION WITH CARDS, ICON, AND NEW CSS//
 
 .restaurant {
     background-color: #f1f1f1;
@@ -252,8 +259,6 @@ body {
         color: #929292;
         font-size: 1.8rem;
         position: absolute;
-        // right: 20px;
-        // bottom: 25px;
     }
 
     &__icon-wrap {
@@ -272,8 +277,6 @@ body {
 
     &__icon--active {
         position: absolute;
-        // right: 30px;
-        // bottom:25px;
         font-size: 2rem;
         opacity: 0;
     }
@@ -282,9 +285,8 @@ body {
         opacity: 1;
         background: -webkit-gradient(linear, left bottom, right top, from($secondary-color), to($primary-color));
 	    -webkit-background-clip: text;
-        // background-clip: border-box;
 	    -webkit-text-fill-color: transparent;
-        color: $primary-color;
+        color: $primary-color; //fallback//
         transition: all 1s ease-in;
     }
 
@@ -297,14 +299,12 @@ body {
         opacity: 1;
         background: -webkit-gradient(linear, left top, right bottom, from($secondary-color), to($primary-color));
 	    -webkit-background-clip: text;
-        // background-clip: border-box;
 	    -webkit-text-fill-color: transparent;
-        color: $secondary-color;
+        color: $secondary-color; //fallback//
         transition: all 1s ease-in;
     }
 
     &__new {
-        border: 1px solid $tertiary-color;
         position: absolute;
         top: 10px;
         right: 10px;
@@ -316,6 +316,8 @@ body {
 
     
 }
+
+// FOOTER CSS SAME FOR ALL PAGES//
 
 .footer {
     @include footer;
@@ -352,6 +354,8 @@ body {
     }
 }
 
+//****** MENU PAGES CSS *****//
+
 .palette-header {
     display: flex;
     margin: 5px;    
@@ -382,12 +386,13 @@ body {
     }
 }
 
+//***MENU CSS***//
+
 .menu {
     width: 100%;
 
     &__image-wrap {
         width: 100%;
-        // object-fit: cover;
         height: 150px;
         margin: 0;
         position: relative;
@@ -396,8 +401,6 @@ body {
     &__image {
         width: 100%;
         object-fit: cover;
-        // height: 200px;
-        // margin: 0;
     }
 
     &__name {
@@ -414,8 +417,6 @@ body {
     &__icon {
         font-size: 2rem;
         position: absolute;
-        // right: 30px;
-        // bottom: 25px;
     }
 
     &__icon-wrap {
@@ -434,8 +435,6 @@ body {
 
     &__icon--active {
         position: absolute;
-        // right: 30px;
-        // bottom:25px;
         font-size: 2rem;
         opacity: 0;
     }
@@ -444,7 +443,6 @@ body {
         opacity: 1;
         background: -webkit-gradient(linear, left top, right bottom, from($secondary-color), to($primary-color));
 	    -webkit-background-clip: text;
-        // background-clip: border-box;
 	    -webkit-text-fill-color: transparent;
         color: $secondary-color;
         transition: all 1s ease-in;
@@ -475,14 +473,11 @@ body {
         width: 100%;
     }
 
+    //***** ITEM ANIMATION****//
+
     &__item-card {
         background-color: white;
         margin: 0 10px 10px 10px;
-        // font-size: 1.6rem;
-        // padding-top: 5px;
-        // padding-bottom: 5px;
-        // display: flex;
-        // flex-flow: column wrap;
         height: 55px;
         border-radius: 15px;
         display: flex;
@@ -491,6 +486,7 @@ body {
         box-shadow: 2px 4px 10px #d6d5d5, -1px 3px 15px #d6d5d5;
     
     }
+
     @keyframes slide-up {
         0% {
             margin-top: 50px;
@@ -505,6 +501,27 @@ body {
             opacity:1;
         }
     }
+
+    &__entrees-wrap {
+        padding-bottom: 8px;
+        animation: slide-up 3s forwards;
+        opacity: 0;
+    }
+
+    &__main-wrap {
+        padding-bottom: 8px;
+        animation: slide-up 3s forwards;
+        animation-delay: 3s;
+        opacity: 0;
+    }
+
+    &__dessert-wrap {
+        animation: slide-up 3s forwards;
+        animation-delay: 6s;
+        opacity: 0;
+    }
+
+    //****** ITEM CARD TRANSITION ****//
 
     &__item-card:hover {
         .menu__text {
@@ -524,9 +541,7 @@ body {
     &__text {
         flex: none;
         width: 75%;
-        transition: width 1000ms 100ms ease-in-out; 
-        // display: flex;
-        // flex-direction: column;
+        transition: width 1000ms 100ms ease-in-out;
         align-items: center;
         padding: 3px 0 3px 3px;
 
@@ -538,17 +553,12 @@ body {
     }
 
     &__item {
-        // padding: 5px;
         font-size: 1.4rem;
         margin: 4px;
         width: 90%;
-        // display: flex;
-        // flex-flow: row wrap;
-        // justify-content: flex-start;
     }
 
     &__description {
-        // padding: 5px;
         font-size:1.2rem;
         margin: 10px 4px 1px 4px;
     }
@@ -633,29 +643,6 @@ body {
 
     #menu__item--longer {
         font-size: 1.2rem;
-        // display: flex-box;
-        // flex-wrap: wrap;
-        // overflow-wrap: normal;
-        // overflow: clip;
-    }
-
-    &__entrees-wrap {
-        padding-bottom: 8px;
-        animation: slide-up 3s forwards;
-        opacity: 0;
-    }
-
-    &__main-wrap {
-        padding-bottom: 8px;
-        animation: slide-up 3s forwards;
-        animation-delay: 3s;
-        opacity: 0;
-    }
-
-    &__dessert-wrap {
-        animation: slide-up 3s forwards;
-        animation-delay: 6s;
-        opacity: 0;
     }
 
 }

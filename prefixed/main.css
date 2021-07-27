@@ -23,7 +23,7 @@ body {
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   background-color: white;
   animation: hide 5000ms forwards;
 }
@@ -130,7 +130,6 @@ body {
 .how-to__steps {
   flex: none;
   width: 80%;
-  border: 1px solid #f1f1f1;
   border-radius: 15px;
   background-color: #f1f1f1;
   font-size: 1.8rem;
@@ -268,7 +267,6 @@ body {
   transition: all 1s ease-in;
 }
 .restaurant__new {
-  border: 1px solid #99E2D0;
   position: absolute;
   top: 10px;
   right: 10px;
@@ -431,6 +429,22 @@ body {
     opacity: 1;
   }
 }
+.menu__entrees-wrap {
+  padding-bottom: 8px;
+  animation: slide-up 3s forwards;
+  opacity: 0;
+}
+.menu__main-wrap {
+  padding-bottom: 8px;
+  animation: slide-up 3s forwards;
+  animation-delay: 3s;
+  opacity: 0;
+}
+.menu__dessert-wrap {
+  animation: slide-up 3s forwards;
+  animation-delay: 6s;
+  opacity: 0;
+}
 .menu__item-card:hover .menu__text {
   width: 55%;
   transition: width 1000ms 100ms ease-in-out;
@@ -531,22 +545,6 @@ body {
 }
 .menu #menu__item--longer {
   font-size: 1.2rem;
-}
-.menu__entrees-wrap {
-  padding-bottom: 8px;
-  animation: slide-up 3s forwards;
-  opacity: 0;
-}
-.menu__main-wrap {
-  padding-bottom: 8px;
-  animation: slide-up 3s forwards;
-  animation-delay: 3s;
-  opacity: 0;
-}
-.menu__dessert-wrap {
-  animation: slide-up 3s forwards;
-  animation-delay: 6s;
-  opacity: 0;
 }
 
 @media screen and (max-width: 950px) and (min-width: 600px) {
