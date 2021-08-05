@@ -452,6 +452,10 @@ body {
 .menu__item-card:hover .menu__checkbox .menu__select--active {
   transform: rotate(-720deg);
   transition: transform 1500ms linear;
+  font-size: 2.2rem;
+}
+.menu .menu__select--active {
+  font-size: 2.2rem;
 }
 .menu__text {
   flex: none;
@@ -572,6 +576,14 @@ body {
     height: 150px;
   }
 
+  .footer__item {
+    font-size: 1.6rem;
+  }
+
+  .footer__item--light {
+    font-size: 1.6rem;
+  }
+
   .menu__bttn {
     padding: 10px;
     width: 25%;
@@ -600,6 +612,10 @@ body {
   }
 
   .menu__item {
+    font-size: 2.2rem;
+  }
+
+  .menu #menu__item--longer {
     font-size: 2.2rem;
   }
 
@@ -633,9 +649,21 @@ body {
     right: 60px;
   }
 
+  .menu__item-card:hover .menu__checkbox {
+    width: 20%;
+    flex: none;
+  }
+  .menu__item-card:hover .menu__checkbox .menu__select--active {
+    font-size: 2.8rem;
+  }
+
   .menu__checkbox {
     width: 20%;
     flex: none;
+  }
+
+  .menu__select--active {
+    font-size: 2.8rem;
   }
 
   .palette-header__icon {
@@ -686,20 +714,20 @@ body {
   }
   .how-to__number {
     margin-left: -50px;
-    width: 25px;
-    font-size: 1.2rem;
-    height: 25px;
+    width: 30px;
+    font-size: 1.8rem;
+    height: 30px;
   }
   .how-to__icon {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     width: 20%;
   }
   .how-to__description {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     width: 75%;
   }
   .how-to__icon--3 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 
   .restaurant__card {
@@ -737,10 +765,19 @@ body {
   .footer {
     height: 150px;
   }
+  .footer__name {
+    font-size: 1.8rem;
+  }
   .footer__wrap {
     height: 50px;
     display: flex;
     flex-flow: column wrap;
+  }
+  .footer__item {
+    font-size: 1.8rem;
+  }
+  .footer__item--light {
+    font-size: 1.8rem;
   }
 
   .palette-header__icon {
@@ -751,7 +788,7 @@ body {
   }
 
   .menu__heading {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
   }
   .menu__bttn {
     padding: 15px 20px 15px 20px;
@@ -774,10 +811,10 @@ body {
     font-size: 3.6rem;
   }
   .menu__item {
-    font-size: 2.2rem;
+    font-size: 2.6rem;
   }
   .menu__description {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .menu__text h3, .menu__text p {
     white-space: normal;
@@ -808,6 +845,19 @@ body {
   .menu__checkbox {
     width: 20%;
     flex: none;
+  }
+  .menu .menu__select--active {
+    font-size: 2.8rem;
+  }
+  .menu__item-card:hover .menu__checkbox {
+    width: 20%;
+    flex: none;
+  }
+  .menu__item-card:hover .menu__checkbox .menu__select--active {
+    font-size: 2.8rem;
+  }
+  .menu #menu__item--longer {
+    font-size: 2.2rem;
   }
 }
 

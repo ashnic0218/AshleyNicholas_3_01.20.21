@@ -24,6 +24,14 @@
         height: 150px;
     }
 
+    .footer__item {
+        font-size: 1.6rem;
+    }
+
+    .footer__item--light {
+        font-size: 1.6rem;
+    }
+
     .menu__bttn {
         padding: 10px;
         width: 25%;
@@ -57,6 +65,13 @@
         font-size: 2.2rem;
     }
 
+    .menu {
+        #menu__item--longer {
+            font-size: 2.2rem;
+        }
+
+    }
+
     .menu__description {
         font-size: 1.8rem;
     }
@@ -67,6 +82,7 @@
         display: flex;
         flex-flow: row wrap;
         width: 65%;
+
     }
 
     .menu__price {
@@ -86,9 +102,29 @@
         right: 60px;
     }
 
+   
+
+    .menu__item-card:hover {
+
+        .menu__checkbox {
+            width: 20%;
+            flex: none;
+            
+            .menu__select--active {
+                font-size: 2.8rem;
+            }
+        }
+        
+
+    }
+
     .menu__checkbox {
         width: 20%;
         flex: none;
+    }
+
+    .menu__select--active {
+        font-size: 2.8rem;
     }
 
     .palette-header__icon {
@@ -146,28 +182,29 @@
     
         &__steps {
             width: 25%;
+            
         }
 
         &__number {
             margin-left: -50px;
-            width: 25px;
-            font-size: 1.2rem;
-            height: 25px;
+            width: 30px;
+            font-size: 1.8rem;
+            height: 30px;
         }
 
         
         &__icon {
-            font-size: 1.2rem;
+            font-size: 1.8rem;
             width: 20%;
         }
 
         &__description {
-            font-size: 1.2rem;
+            font-size: 1.8rem;
             width: 75%;
         }
 
         &__icon--3 {
-            font-size: 1.2rem;
+            font-size: 1.8rem;
         }
 
     }
@@ -218,10 +255,23 @@
     .footer {
         height: 150px;
 
+        &__name {
+            font-size: 1.8rem;
+        }
+
         &__wrap {
             height: 50px;
             display: flex;
             flex-flow: column wrap;
+            // font-size: 1.8rem;
+        }
+
+        &__item {
+            font-size: 1.8rem;
+        }
+
+        &__item--light {
+            font-size: 1.8rem;
         }
     }
 
@@ -240,7 +290,7 @@
     .menu {
 
         &__heading {
-            font-size: 1.8rem;
+            font-size: 2.4rem;
         }
 
         &__bttn {
@@ -268,11 +318,11 @@
         }
     
         &__item {
-            font-size: 2.2rem;
+            font-size: 2.6rem;
         }
     
         &__description {
-            font-size: 1.8rem;
+            font-size: 2.0rem;
         }
     
         &__text h3, &__text p{
@@ -312,6 +362,30 @@
             flex: none;
         }
 
+        .menu__select--active {
+            font-size: 2.8rem;
+        }
+
+        &__item-card:hover {
+
+            .menu__checkbox {
+                width: 20%;
+                flex: none;
+                
+                .menu__select--active {
+                    font-size: 2.8rem;
+                }
+            }
+            
+    
+        }
+
+        
+        #menu__item--longer {
+                font-size: 2.2rem;
+        }
+    
+        
     }
 
     

@@ -534,8 +534,13 @@ body {
             .menu__select--active {
                 transform: rotate(-720deg);
                 transition: transform 1500ms linear;
+                font-size: 2.2rem;
             }
         }
+    }
+
+    .menu__select--active {
+        font-size: 2.2rem;
     }
 
     &__text {
